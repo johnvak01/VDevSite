@@ -20,7 +20,25 @@
   <body>
     <p>Hello World!!!</p>
     <div class="container">
-	    <p> testing bootstrap </p>
+	    <div class = "counter-div"> 
+		<h1> counter app </h1>
+		<span class = "count">0</span>
+		<hr>
+		<div class="buttons">
+			<button class="subtract"> 
+				<i class="fas fa-arrow-down subtract"></i>
+				-1 
+			</button>
+			<button class="reset">
+				<i class="fas fa-spinner reset"></i>
+				reset
+			</button>
+			<button class="add">
+				<i class="fas fa-arrow-up add"></i>
+				+1
+			</button>
+		</div>
+	    </div>
     </div>
     <script src="{% static 'd1_counterapp/script.js' %}"></script>
   </body>
