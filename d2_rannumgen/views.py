@@ -4,9 +4,5 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    return render(request,"d1_counterapp/index.html")
-
-
-
-
+    return render(request,"d2_rannumgen/index.html")
 
