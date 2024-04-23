@@ -22,4 +22,5 @@ urlpatterns = [
     path('polls', include("polls.urls")),
     path("d1_counterapp",include("d1_counterapp.urls")),
     path("d2_rannumgen",include("d2_rannumgen.urls")),
+    path("d3_hexcolorgen",include("d3_hexcolorgen.urls")),
     ]
