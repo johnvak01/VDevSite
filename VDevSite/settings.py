@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'd1_counterapp',
+    'd2_rannumgen',
+    'd3_hexcolorgen',
     'bootstrap5'
     ]
 

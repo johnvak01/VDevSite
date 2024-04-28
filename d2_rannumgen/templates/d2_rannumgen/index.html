@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    {% load bootstrap5 %}
+    {% bootstrap_css  %}
+    {% bootstrap_javascript  %}
+    <script
+      src="https://kit.fontawesome.com/1935d064dd.js"
+      crossorigin="anonymous"
+    ></script>
+    
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'd2_rannumgen/styles.css' %}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'd2_rannumgen/favicon.ico' %}"/>
+  </head>
+  <body>
+    <div class = "container">
+	<div class = "counter-div">
+	    <h1>Random Hex Number </h1>
+	    <span class="hexNumber">0</span>
+	    <hr>
+	
+	    <div class = "buttons">
+                <button class="generate">
+		    <i class = "fas fa-spinner generate"></i>
+	    	    Generate
+	        </button>
+	    </div>
+ 	</div>
+    </div>
+    <script src="{% static 'd2_rannumgen/script.js' %}"></script>
+  </body>
+</html>
