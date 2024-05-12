@@ -23,4 +23,5 @@ urlpatterns = [
     path("d1_counterapp",include("d1_counterapp.urls")),
     path("d2_rannumgen",include("d2_rannumgen.urls")),
     path("d3_hexcolorgen",include("d3_hexcolorgen.urls")),
+    path("d4_modal",include("d4_modal.urls")),
     ]

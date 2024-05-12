@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'd1_counterapp',
     'd2_rannumgen',
     'd3_hexcolorgen',
+    'd4_modal',
     'bootstrap5'
     ]
 
