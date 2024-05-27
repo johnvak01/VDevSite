@@ -16,7 +16,27 @@
     <link rel="shortcut icon" type="image/x-icon"  href={% static 'd4_modal/favicon.ico'  %} />
   </head>
   <body>
-    <p>Hello World!!!</p>
+    
+    <header>
+      <h1>Modal Testing Page</h1>
+      <h2>Click button Below</h2>
+    </header>
+      
+    <section>
+      <div class="container">
+        <form Action = "">
+          <button id="mdlbtn" class="mdlbtn">Pop Up</button>
+        </form>
+      </div>
+    </section>
+    <div class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1>Modal</h1>
+        <hr>
+        <p>Lorem Ipsum Domine</p>
+      </div>
+    </div>
 
     <script src="{% static 'd4_modal/script.js' %}"></script>
   </body>
