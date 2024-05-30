@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'd2_rannumgen',
     'd3_hexcolorgen',
     'd4_modal',
+    'd5_palicheck',
     'bootstrap5'
     ]
 

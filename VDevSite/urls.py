@@ -24,4 +24,5 @@ urlpatterns = [
     path("d2_rannumgen",include("d2_rannumgen.urls")),
     path("d3_hexcolorgen",include("d3_hexcolorgen.urls")),
     path("d4_modal",include("d4_modal.urls")),
+    path('d5_palicheck',include("d5_palicheck.urls")),
     ]
