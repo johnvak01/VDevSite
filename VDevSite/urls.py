@@ -25,4 +25,5 @@ urlpatterns = [
     path("d3_hexcolorgen",include("d3_hexcolorgen.urls")),
     path("d4_modal",include("d4_modal.urls")),
     path('d5_palicheck',include("d5_palicheck.urls")),
+    path('d6_vowelcount',include("d6_vowelcount.urls")),
     ]
