@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'd3_hexcolorgen',
     'd4_modal',
     'd5_palicheck',
+    'd6_vowelcount',
     'bootstrap5'
     ]
 

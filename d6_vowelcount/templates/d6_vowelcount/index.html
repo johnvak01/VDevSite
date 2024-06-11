@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <script
+      src="https://kit.fontawesome.com/1935d064dd.js"
+      crossorigin="anonymous"
+    ></script>
+    {% load static %}
+    <link rel="stylesheet" href={% static 'd6_vowelcount/styles.css'  %} />
+    <link rel="shortcut icon" type="image/x-icon"  href={% static 'd6_vowelcount/favicon.ico'  %} />
+  </head>
+  <body>
+    <section>
+      <div class="main">
+        <div class="contents">
+          <input class="input-text" type="TEXT" Placeholder="Enter Text Here">
+          <button id="checkbtn">Check</button>
+          <p id="output">Placeholder</p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <script src="{% static 'd6_vowelcount/script.js' %}"></script>
+  </body>
+</html>
