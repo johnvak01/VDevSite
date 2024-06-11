@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'd4_modal',
     'd5_palicheck',
     'd6_vowelcount',
+    'd7_clickcopy',
     'bootstrap5'
     ]
 
