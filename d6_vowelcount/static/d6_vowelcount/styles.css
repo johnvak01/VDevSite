@@ -23,11 +23,12 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: var(--light-blue);
 }
 
 p {
   font-size: 1.6rem;
-  line-height: 1.5;
+  line-heiight: 1.5;
 }
 
 img {
@@ -39,3 +40,51 @@ img {
   margin: 0 auto;
   padding: 0 20px;
 }
+
+div.main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.contents{
+  width: 40rem;
+  padding: 5rem 3rem;
+  background-color: var(--white); 
+  align-content: center;
+  justify-content: center;
+}
+
+input.input-text{
+  width: 70%;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid var(color-sec);
+  padding 1rem 5px;
+  font-size: 1.6rem;
+}
+
+button#checkbtn{
+  width: 25%;
+  padding: 1rem 5px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  color:var(--white);
+  background-color: var(--color-primary);
+}
+
+button#checkbtn:hover{
+  background-color: var(--color-sec);
+}
+
+#output{
+  margin-top: .5rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--dark-grey);
+}
+
