@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'd5_palicheck',
     'd6_vowelcount',
     'd7_clickcopy',
+    'd8_gddlink',
     'bootstrap5'
     ]
 
