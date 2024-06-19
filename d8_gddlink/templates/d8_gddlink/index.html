@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>d8_gddlink</title>
+
     {% load bootstrap5 %}
     {% bootstrap_css %}
     {% bootstrap_javascript %}
@@ -16,8 +18,87 @@
     <link rel="shortcut icon" type="image/x-icon"  href={% static 'd8_gddlink/favicon.ico'  %} />
   </head>
   <body>
-    <p>Hello World!!!</p>
+    <main>
+      <section class="main-container">
+        <div class="instructions">
+          <div class="container">
+            <h2 class=line>Instructions</h2>
+            <p>Follow the instructions below to obtain your file link</p>
+            <hr>
+            <ol type="I">
+              <li>
+                <p>Open <a href="https://drive.google.com/drive/my-drive">Google Drive</a></p>
+              </li>
+              <li>
+                <p>Right Click on File</p> 
+              </li>
+              <li>
+                <p>Select "Get Link" and click "Copy Link"</p>
+              </li>
+              <li>
+                <p>Paste link here and select "Generate Embeds"</p>
+              </li>
+            </ol>
 
+          </div>
+        </div>
+        <!-- Todnload seciton-->
+        <div class="download-link">
+          <h1>Google Direct Download Link</h1>
+          
+          <input type="radio" id="file-tab" name="tab" checked>
+          <input type="radio" id="audio-tab" name="tab">
+          <input type="radio" id="vid-tab" name="tab">
+          <nav>
+            <label for="file-tab">
+              <i class="fas fa-sign-in-alt"></i>
+              Direct Link
+            </label>
+            <label for="file-tab">
+              <i class="fas fa-headphones-alt"></i>
+              Audio Embed
+            </label>
+            <label for="file-tab">
+              <i class="fas fa-photo-video"></i>
+              File Embed 
+            </label>
+          </nav>
+          <div class = "link-input">
+            <i class="fas fa-download"></i>
+            <h2>Google Drive Link</h2>
+            <p>Input Google Drive Link Here:</p>
+            <form action="" >
+              <label for="glink">
+                <i class="fab fa-google-drive"></i>
+                <input type="text" id="glink" class="glink" placeholder="http://" autocomplete="off"required></input>
+              </label>
+            <button id="btn" class="btn">Generate</button>
+
+            </form>
+          </div>
+          <!--tabs content -->
+          <section class=tab-contents>
+            
+            <div class="content content-file">
+              <h3></h3>
+            </div>
+            <div class="content content-audio">
+              
+            </div>
+            <div class="content content-videoi">
+              
+              
+            </div>
+            
+          </section>
+        </div>
+
+      </section>
+
+     <section class="content">
+      
+    </main>
     <script src="{% static 'd8_gddlink/script.js' %}"></script>
   </body>
+
 </html>
