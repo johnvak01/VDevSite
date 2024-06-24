@@ -33,9 +33,269 @@ p {
 img {
   width: 100%;
 }
-
+/*personal code*/
 .container {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 20px;
 }
+
+.main-container{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.instructions{
+  font-size: 1.6rem;
+  width: 30%;
+  height: 100vh;
+  background-color: var(--black);
+  color: var(--white);
+  padding-top: 5rem;
+  position: relative;
+}
+
+.instructions h2::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 25%;
+  height: 2px;
+}
+
+.instructions ol a{
+  color: var(--color-sec);
+}
+
+h2.line{
+  color: var(--color-sec);
+  margin-bottom: 1rem;
+}
+/*second section*/
+.download-link{
+  width: 70%;
+  padding-top: 5rem;
+}
+
+.tab-contents{
+  border: 2px solid var(--color-primary);
+  border-radius: 0 0 5px 5px;
+}
+
+.download-link h1 {
+  display: block;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 5rem;
+  color: var(--primary-color);
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+main input[type="radio"]{
+  display:none;
+}
+
+main nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid var(--white);
+  padding 5px;
+  position: relative;
+  background-color: var(--grey);
+  z-index: 1;
+}
+
+main nav label{
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1rem;
+  position: relative;
+  color: var(--dark-grey);
+  cursor: pointer;
+
+}
+
+main nav label i{
+  padding-right: 5px;
+  color: var(--color-sec);
+}
+
+div .link-input{
+   position: relative;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+   border: 2px solid black;
+   text-align: center;
+}
+
+.slide{
+  position: absolute;
+  top: 0;
+  left: 3%;
+  width: 26%;
+  height: 100%;
+  background-color: var(--color-primary);
+  border-radius: 3px;
+  z-index: -1;
+  transition: all .3s;
+}
+
+#audio-tab:checked ~ nav .slide{
+  left: 31%;
+}
+#vid-tab:checked ~ nav .slide {
+  left: 66%; 
+}
+
+#file-tab:checked ~ nav label.file-tab,
+#audio-tab:checked ~ nav label.audio-tab,
+#vid-tab:checked ~ nav label.vid-tab{
+  color: var(--white);
+}
+
+.content{
+  display: none;
+}
+
+#file-tab:checked ~ section .content-file{
+  display: block;
+}
+
+#audio-tab:checked ~ section .content-audio{
+  display: block;
+}
+
+#vid-tab:checked ~ section .content-video{
+  display: block;
+}
+
+/* form style*/
+
+section .content{
+  margin: 3rem auto;
+  text-align: center;
+}
+
+div.download-link h2{
+  font-size: 2rem;
+  line-height: 2;
+  padding: 0 1rem; 
+  position: relative;
+}
+
+div.link-input > p{
+  padding-bottom 1rem;
+}
+
+div.link-input > form{
+  width: 70%;
+  margin: 0 Auto;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.link-input > i{
+  font-size: 3rem;
+  color: var(--color-sec);
+  border: 2px solid;
+  padding: 8px;
+  border-radius: 5rem;
+}
+
+.link-input form label{
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.link-input form label input{
+  display: block;
+  width: 100%;
+  padding: 1.3rem 3rem;
+  border-radius: 10px 0 10px 0;
+  border-bottom: 2px solid rgba(0,0,0,.4);
+  margin: 2rem;
+  background-color: rgba(0,0,0,.1);
+  outline: none;
+  color: var(--dark-grey);
+  transition: all .3s;
+}
+
+
+.link-input form label input:focus:invalid{
+  font-size: 1.6rem;
+  border-bottom: 2px solid var(--color-sec);
+}
+
+.link-input form label input:valid{
+  font-size: 1.6rem;
+  border-bottom: 2px solid green;
+  background-color: #E8F0FE;
+}
+
+
+.link-input form label i{
+  position: absolute;
+  left: 3.5rem;
+  top: 3.5rem;
+  font-size: 1.3rem;
+  color: var(--color-primary);
+}
+
+::placeholder {
+font-size: 1.6rem;
+color:var(--dark-grey);
+}
+
+.content h3{
+  font-size: 1.6rem;
+  position: relative;  
+}
+
+textarea.embed{
+  width: 90%;
+  height: 10rem;
+  outline: none;
+  font-size: 1.6rem;
+}
+
+.content span{
+  font-size: 1.6rem;
+  position: relative;
+  bottom: 1rem;
+  right: 5rem;
+  font-weight: 600;
+  background-color: var(--color-primary);
+  color: var(--white);
+  padding: 5px 8px;
+}
+
+.content span:hover{
+font-size: 1.7rem;
+}
+
+.link-input button{
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 700rem;
+  background-color: var(--color-sec);
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  color: var(--white);
+  cursor: button;
+}
+
+.link-input button:hover{
+  background-color: var(--color-primary);
+  color: var(--white);
+}
+
+
+

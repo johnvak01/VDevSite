@@ -22,7 +22,7 @@
       <section class="main-container">
         <div class="instructions">
           <div class="container">
-            <h2 class=line>Instructions</h2>
+            <h2 class="line">Instructions</h2>
             <p>Follow the instructions below to obtain your file link</p>
             <hr>
             <ol type="I">
@@ -42,27 +42,10 @@
 
           </div>
         </div>
-        <!-- Todnload seciton-->
+        <!-- To download section-->
         <div class="download-link">
           <h1>Google Direct Download Link</h1>
-          
-          <input type="radio" id="file-tab" name="tab" checked>
-          <input type="radio" id="audio-tab" name="tab">
-          <input type="radio" id="vid-tab" name="tab">
-          <nav>
-            <label for="file-tab">
-              <i class="fas fa-sign-in-alt"></i>
-              Direct Link
-            </label>
-            <label for="file-tab">
-              <i class="fas fa-headphones-alt"></i>
-              Audio Embed
-            </label>
-            <label for="file-tab">
-              <i class="fas fa-photo-video"></i>
-              File Embed 
-            </label>
-          </nav>
+           
           <div class = "link-input">
             <i class="fas fa-download"></i>
             <h2>Google Drive Link</h2>
@@ -76,29 +59,48 @@
 
             </form>
           </div>
+          <input type="radio" id="file-tab" name="tab" checked>
+          <input type="radio" id="audio-tab" name="tab">
+          <input type="radio" id="vid-tab" name="tab">
+          <nav>
+            <label for="file-tab" class="file-tab">
+              <i class="fas fa-sign-in-alt"></i>
+              Direct Link
+            </label>
+            <label for="audio-tab"class="audio-tab">
+              <i class="fas fa-headphones-alt"></i>
+              Audio Embed
+            </label>
+            <label for="vid-tab" class="vid-tab">
+              <i class="fas fa-photo-video"></i>
+              File Embed 
+            </label>
+            <div class="slide"></div>
+
+          </nav>
           <!--tabs content -->
           <section class=tab-contents>
             
             <div class="content content-file">
               <h3>Direct Download Link Embed</h3>
-              <textarea Class="embed" id="fileEmbed" cols="30" rows="10"></textarea><span class="copy">copy</span>
+              <textarea Class="embed" id="fileEmbed" cols="30" rows="10"></textarea>
+              <span class="copy">copy</span>
             </div>
             <div class="content content-audio">
               <h3>Audio Embed</h3>
-              <textarea Class="embed" id="audioEmbed" cols="30" rows="10"></textarea><span class="copy">copy</span>
+              <textarea Class="embed" id="audioEmbed" cols="30" rows="10"></textarea>
+              <span class="copy">copy</span>
             </div>
-            <div class="content content-videoi">
+            <div class="content content-video">
               <h3>Video Embed</h3>
-              <textarea Class="embed" id="videoEmbed" cols="30" rows="10"></textarea><span class="copy">copy</span>
+              <textarea Class="embed" id="videoEmbed" cols="30" rows="10"></textarea>
+              <span class="copy">copy</span>
             </div>
             
           </section>
         </div>
 
       </section>
-
-     <section class="content">
-      
     </main>
     <script src="{% static 'd8_gddlink/script.js' %}"></script>
   </body>
