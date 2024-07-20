@@ -28,4 +28,5 @@ urlpatterns = [
     path('d6_vowelcount',include("d6_vowelcount.urls")),
     path('d7_clickcopy', include("d7_clickcopy.urls")),
     path('d8_gddlink', include("d8_gddlink.urls")),
+    path('d9_charcount',include("d9_charcount.urls")),
     ]
