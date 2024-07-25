@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'd7_clickcopy',
     'd8_gddlink',
     'd9_charcount',
+    'd10_netstatus',
     'bootstrap5'
     ]
 

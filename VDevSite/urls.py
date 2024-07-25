@@ -29,4 +29,5 @@ urlpatterns = [
     path('d7_clickcopy', include("d7_clickcopy.urls")),
     path('d8_gddlink', include("d8_gddlink.urls")),
     path('d9_charcount',include("d9_charcount.urls")),
+    path('d10_netstatus',include("d10_netstatus.urls")),
     ]
