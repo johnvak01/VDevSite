@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'd8_gddlink',
     'd9_charcount',
     'd10_netstatus',
+    'd11_quizapp',
     'bootstrap5'
     ]
 
