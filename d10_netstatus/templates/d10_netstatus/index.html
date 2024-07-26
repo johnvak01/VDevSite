@@ -18,9 +18,11 @@
   <body>
     <section id="main">
       <div class="container">
-        <img id="connection-image">
+        <img id="online-img" src={% static 'd10_netstatus/online.png'%}>
+        <img id="offline-img" src={% static 'd10_netstatus/offline.png'%}>
+        <hr>
         <h1>Internet Connection Status</h1>
-        <h2 class= "status" id="status"> Pending  </h2>
+        <h2 class= "statusValue" id="statusValue"> Pending  </h2>
 
       </div>
     </section>

@@ -41,6 +41,10 @@ img {
 }
 
 
+section#main.online{
+  background-color: var(--light-blue);
+}
+
 section#main {
   background-color: var(--dark-grey);
   height: 100vh;
@@ -52,25 +56,24 @@ section#main {
   align-items: center;
 }
 
-.online{
-  background-color: var(--light-blue);
-}
 
 div.container{
- 
+  align-items: center; 
   text-align: center;
+  justify-content: center;
 }
 
-img.conneciton-image{
+div img{
   width: 25%;
   border-radius: 10rem;
+  display: none; 
 }
 
 h1{
   font-size: 3rem;
 }
 
-h2.status{
+h2.statusValue{
   font-size: 2rem;
 }
 
