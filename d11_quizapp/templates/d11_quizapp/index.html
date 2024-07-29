@@ -13,10 +13,40 @@
     ></script>
     {% load static %}
     <link rel="stylesheet" href={% static 'd11_quizapp/styles.css'  %} />
-    <link rel="shortcut icon" type="image/x-icon"  href={% static 'd11_quizap/favicon.ico'  %} />
+    <link rel="shortcut icon" type="image/x-icon"  href={% static 'd11_quizapp/favicon.ico'  %} />
   </head>
   <body>
-    <p>Hello World!!!</p>
+    <section id="main">
+      <div id="content-box">
+        <div id = "content">
+          <div id="title"><h1>Quiz App</h1></div>
+          <hr>
+          <div class="quiz-header">
+            <p id="q-counter">Question x of y</p>
+            <p id="t-counter">10</p>
+          </div>
+          <p id="question">why?</p>
+          <div class="buttons">
+            
+            <button class="button" id="btn-0" type="button">
+              A. <span id="choice-0">example</span>
+            </button>
+            <button class="button" id="btn-1" type="button">
+              B. <span id="choice-1">example</span>
+            </button>
+            <button class="button" id="btn-2" type="button">
+              C. <span id="choice-2">example</span>
+            </button>
+            <button class="button" id="btn-3" type="button">
+              D. <span id="choice-3">example</span>
+            </button>
+          </div>
+          <p id="score"> x out of x</p>
+          <button id="retake" type="button">Retake?</button>
+
+        </div>
+      </div>
+    </section>
 
     <script src="{% static 'd11_quizapp/script.js' %}"></script>
   </body>

@@ -39,3 +39,130 @@ img {
   margin: 0 auto;
   padding: 0 20px;
 }
+
+#main {
+  
+  background-color: var(--light-blue);
+}
+
+#content-box {
+  display: flex;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+} 
+
+#content {
+  background-color: var(--grey);
+  
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 1rem 5rem 1rem 5rem;
+  
+  width: 30%;
+  
+}
+
+ #title {
+  background-color: var(--color-sec);
+  color: white;
+  border: 1px groove black;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 4px;
+}
+
+.quiz-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+#q-counter {
+  color: var(--dark-grey);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+#t-counter {
+  color: var(--dark-grey);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--white);
+  background-color: orangered;
+  padding: 2px;
+  margin: 1px;
+  border: 1px groove black;
+  border-radius: 3px;
+}
+
+#question{
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: left;
+  
+  padding: 0.5rem;
+  margin: 1rem;
+  border:1px solid black;
+  border-radius:3px;
+}
+
+.buttons{
+  background-color: var(--light-grey);
+  margin:0px;
+  border:1px solid #777;
+  border-radius:3px;
+  padding:1rem;
+}
+
+.button{
+  text-align: left;
+  background-color: #ddd;
+  width: 100%;
+  font-size: 1.8rem;
+  color: black;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 7px 0;
+  padding: 5px;
+}
+
+.button:hover{
+  background-color: var(--color-primary);
+  color: #fff;
+  cursor: pointer;
+}
+
+.button:active{
+  background-color: var(--color-sec);
+}
+
+
+
+#score{
+  display: none;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+}
+
+#retake{
+  display: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: orangered;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  transition: all .3s;
+  text-align: center;
+}
+
+#retake:hover{
+  background-color: var(--color-primary);
+}
+
