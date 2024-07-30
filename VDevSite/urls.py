@@ -31,4 +31,5 @@ urlpatterns = [
     path('d9_charcount',include("d9_charcount.urls")),
     path('d10_netstatus',include("d10_netstatus.urls")),
     path('d11_quizapp',include("d11_quizapp.urls")),
+    path('d12_geolocate',include("d12_geolocate.urls"))
     ]

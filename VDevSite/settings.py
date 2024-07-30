@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'd9_charcount',
     'd10_netstatus',
     'd11_quizapp',
+    'd12_geolocate',
     'bootstrap5'
     ]
 
