@@ -1,0 +1,22 @@
+[
+  {
+    "id":"1",
+    "name":"magenta",
+    "age":"21"
+  },
+  {
+    "id":"2",
+    "name":"rose",
+    "age":"22"
+  },
+  {
+    "id":"3",
+    "name":"fuschia",
+    "age":"23"
+  },
+  {
+    "id":"4",
+    "name":"pink",
+    "age":"24"
+  }
+]

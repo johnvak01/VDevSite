@@ -19,17 +19,19 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('polls', include("polls.urls")),
-    path("d1_counterapp",include("d1_counterapp.urls")),
-    path("d2_rannumgen",include("d2_rannumgen.urls")),
-    path("d3_hexcolorgen",include("d3_hexcolorgen.urls")),
-    path("d4_modal",include("d4_modal.urls")),
-    path('d5_palicheck',include("d5_palicheck.urls")),
-    path('d6_vowelcount',include("d6_vowelcount.urls")),
-    path('d7_clickcopy', include("d7_clickcopy.urls")),
-    path('d8_gddlink', include("d8_gddlink.urls")),
-    path('d9_charcount',include("d9_charcount.urls")),
-    path('d10_netstatus',include("d10_netstatus.urls")),
-    path('d11_quizapp',include("d11_quizapp.urls")),
-    path('d12_geolocate',include("d12_geolocate.urls"))
+    path('polls/', include("polls.urls")),
+    path("d1_counterapp/",include("d1_counterapp.urls")),
+    path("d2_rannumgen/",include("d2_rannumgen.urls")),
+    path("d3_hexcolorgen/",include("d3_hexcolorgen.urls")),
+    path("d4_modal/",include("d4_modal.urls")),
+    path('d5_palicheck/',include("d5_palicheck.urls")),
+    path('d6_vowelcount/',include("d6_vowelcount.urls")),
+    path('d7_clickcopy/', include("d7_clickcopy.urls")),
+    path('d8_gddlink/', include("d8_gddlink.urls")),
+    path('d9_charcount/',include("d9_charcount.urls")),
+    path('d10_netstatus/',include("d10_netstatus.urls")),
+    path('d11_quizapp/',include("d11_quizapp.urls")),
+    path('d12_geolocate/',include("d12_geolocate.urls")),
+    path('d13_httpprototype/',include("d13_httpprototype.urls"))
+    
     ]
