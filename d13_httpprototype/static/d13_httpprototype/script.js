@@ -8,6 +8,20 @@ function getUsers(e){
   httpRq.onload = function(){
     if(this.status === 200 ){
       console.log(this.responseText);
+      const users = JSON.parse(this.responseText);
+      
+      let output = "<h1>Users<h1>";
+      
+      users.forEach(function(user){
+        output+=
+        `
+        <hr>
+        <h2> User ${user.id} - ${user.name}: Age ${user.age}</h2>
+        `
+      })
+      document.getElementById("users").innerHTML = output;
+
+
     } else{
       console.log(this.responseText);
     }
