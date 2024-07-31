@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'd10_netstatus',
     'd11_quizapp',
     'd12_geolocate',
+    'd13_httpprototype',
     'bootstrap5'
     ]
 
