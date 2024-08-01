@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <script
+      src="https://kit.fontawesome.com/1935d064dd.js"
+      crossorigin="anonymous"
+    ></script>
+    {% load static %}
+    <link rel="stylesheet" href={% static 'd14_quotegen/styles.css'  %} />
+    <link rel="shortcut icon" type="image/x-icon"  href={% static 'd14_quotegen/favicon.ico'  %} />
+  </head>
+  <body>
+    <p>Hello World!!!</p>
+    <a href="http://127.0.0.1:8000/d13_httpprototype">last project</a>
+    <script src="{% static 'd14_quotegen/script.js' %}"></script>
+  </body>
+</html>

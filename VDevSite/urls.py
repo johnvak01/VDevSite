@@ -32,6 +32,8 @@ urlpatterns = [
     path('d10_netstatus/',include("d10_netstatus.urls")),
     path('d11_quizapp/',include("d11_quizapp.urls")),
     path('d12_geolocate/',include("d12_geolocate.urls")),
-    path('d13_httpprototype/',include("d13_httpprototype.urls"))
+    path('d13_httpprototype/',include("d13_httpprototype.urls")),
+    path('d14_quotegen/',include("d14_quotegen.urls"))
     
     ]
+

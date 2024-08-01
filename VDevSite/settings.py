@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'd11_quizapp',
     'd12_geolocate',
     'd13_httpprototype',
+    'd14_quotegen',
     'bootstrap5'
     ]
 
