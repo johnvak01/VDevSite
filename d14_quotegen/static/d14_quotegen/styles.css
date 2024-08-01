@@ -39,3 +39,27 @@ img {
   margin: 0 auto;
   padding: 0 20px;
 }
+
+#title {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.button {
+  padding 1rem;
+}
+
+hr {
+  background-color: var(--light-blue);
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+

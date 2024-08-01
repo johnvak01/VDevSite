@@ -16,8 +16,20 @@
     <link rel="shortcut icon" type="image/x-icon"  href={% static 'd14_quotegen/favicon.ico'  %} />
   </head>
   <body>
-    <p>Hello World!!!</p>
-    <a href="http://127.0.0.1:8000/d13_httpprototype">last project</a>
+    <div class="container">
+      <h1 id="title">Quote Generator</h1>
+      <form>
+        <div>
+          <label for="number">Number of Quotes</label>
+          <input type="number" id="number">
+        </div>
+        <button class="get-quotes"> Get Quotes</button>
+      </form>
+    </div>
+    <hr> 
+    <ul id="quotes">
+    </ul>
+
     <script src="{% static 'd14_quotegen/script.js' %}"></script>
   </body>
 </html>
