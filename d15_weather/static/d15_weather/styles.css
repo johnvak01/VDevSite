@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --grey: #eee;
+  --dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* New Stuff*/
+
+body {
+  background: linear-gradient(to right bottom, var(--color-primary), var(--color-sec));
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+}
+
+
+.main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 320px;
+  min-height: 640px;
+  height: 80vh;
+  background: url(/static/d15_weather/weather.png) no-repeat center;
+  background-size: cover;
+  border-radius: 10px;
+  color: var(--grey);
+}
+
+.top h1{
+  line-height: 2;
+}
+
+.top form{
+  display: flex;
+  flex-direction: column;
+}
+
+.top input, .top button{
+  padding: 10px;
+  width: 80%;
+  margin: 5px auto;
+  margin-bottom: 5px;
+  outline: none;
+  border-radius: 5px;
+}
+
+.top input{
+  background-color: rgba(0,0,0,.5);
+  border: 0px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+
+.top button{
+  color: var(--white);
+  background-color: var(--color-sec);
+}
+
+.top button:hover{
+  background-color: var(--light-blue);
+  color: var(--white);
+}
+
+.top button:active{
+  background-color: var(--color-primary);
+  transform: translatey(-5px);
+}
+
+.top input::placeholder{
+  color: rgba(255,255,255,.5);
+}
+
+.error{
+  text-align: center;
+  color: var(--white);
+  font-size: 14px; 
+}
+
+.icon{
+  text-align: center;
+  padding-top: 15px;
+}
+
+.location{
+  padding-bottom:15px;
+  text-align: center;
+  color: var(--white);
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.current {
+  font-size: 12px;
+  text-align: left;
+}
+
+.current > * {
+  padding-bottom: 10px;
+
+}
+
+.city{
+  font-size: 20px;
+  font-weight: 700;
+}
+

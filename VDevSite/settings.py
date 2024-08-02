@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'd12_geolocate',
     'd13_httpprototype',
     'd14_quotegen',
+    'd15_weather',
     'bootstrap5'
     ]
 

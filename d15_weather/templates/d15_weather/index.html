@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <script
+      src="https://kit.fontawesome.com/1935d064dd.js"
+      crossorigin="anonymous"
+    ></script>
+    {% load static %}
+    <link rel="stylesheet" href={% static 'd15_weather/styles.css'  %} />
+    <link rel="shortcut icon" type="image/x-icon"  href={% static 'd15_weather/favicon.ico'  %} />
+  </head>
+  <body>
+    <div class= "main-container">
+      <div class="container top">
+        <h1>Weather App</h1>
+        <form action="" onsubmit="return false">  
+          <label for"Search">Find a city</label>
+          <input type="text" class="search" id="search" placeholder="Search by City Name">
+          <button type="submit" class="btn">Submit</button>
+          <p class="error"></p>
+        </form>
+      </div>
+      <section>
+        <div class="container">
+          <div class="icon">
+            <img src="" alt="" class="weather_icon">
+          </div>
+          <div class="location">
+            <div class="city">New York, USA</div>
+            <div class="time">Friday August 2, 2024</div>
+          </div>
+          <hr>
+          <div class="current">
+            <div class="temp">81F</div>
+            <div class="weather">Weather: Sunny</div>
+            <div class="temp_range">70F/100F</div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="{% static 'd15_weather/script.js' %}"></script>
+  </body>
+</html>
