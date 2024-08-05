@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'd13_httpprototype',
     'd14_quotegen',
     'd15_weather',
+    'd16_listsearch',
     'bootstrap5'
     ]
 
