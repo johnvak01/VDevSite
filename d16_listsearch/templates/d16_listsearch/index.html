@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <script
+      src="https://kit.fontawesome.com/1935d064dd.js"
+      crossorigin="anonymous"
+    ></script>
+    {% load static %}
+    <link rel="stylesheet" href={% static 'd16_listsearch/styles.css'  %} />
+    <link rel="shortcut icon" type="image/x-icon"  href={% static 'd16_listsearch/favicon.ico'  %} />
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" id="search" placeholder = "Search a Country">
+      <ol id="country-list">
+        <li>China</li>  
+        <li>India</li>  
+        <li>USA</li>  
+        <li>Russia</li>  
+        <li>Indonesia</li>  
+        <li>Pakistan</li>  
+        <li>Nigeria</li>  
+        <li>Brazil</li>  
+        <li>Bangladesh</li>  
+        <li>Mexico</li>  
+        <li>Ethiopia</li>  
+        <li>Japan</li>  
+        <li>Phillipines</li>  
+      </ul>
+    </div>"
+    <script src="{% static 'd16_listsearch/script.js' %}"></script>
+  </body>
+</html>
