@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'd14_quotegen',
     'd15_weather',
     'd16_listsearch',
+    'd17_countdown',
     'bootstrap5'
     ]
 

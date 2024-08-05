@@ -36,6 +36,7 @@ urlpatterns = [
     path('d14_quotegen/',include("d14_quotegen.urls")),
     path('d15_weather/',include("d15_weather.urls")),
     path('d16_listsearch/',include("d16_listsearch.urls")),
+    path('d17_countdown/',include("d17_countdown.urls")),
     
     ]
 
