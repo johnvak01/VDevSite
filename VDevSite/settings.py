@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'd17_countdown',
     'd18_tcountdown',
     'd19_tipcalc',
+    'd20_smoothscroll',
     'bootstrap5'
     ]
 

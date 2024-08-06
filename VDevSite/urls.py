@@ -39,6 +39,7 @@ urlpatterns = [
     path('d17_countdown/',include("d17_countdown.urls")),
     path('d18_tcountdown/',include("d18_tcountdown.urls")),
     path('d19_tipcalc/',include("d19_tipcalc.urls")),
+    path('d20_smoothscroll/',include("d20_smoothscroll.urls")),
     
     ]
 
