@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'd15_weather',
     'd16_listsearch',
     'd17_countdown',
+    'd18_tcountdown',
     'bootstrap5'
     ]
 
