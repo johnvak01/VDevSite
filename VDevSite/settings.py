@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'd16_listsearch',
     'd17_countdown',
     'd18_tcountdown',
+    'd19_tipcalc',
     'bootstrap5'
     ]
 

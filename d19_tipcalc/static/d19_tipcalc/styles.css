@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --grey: #eee;
+  --dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+section{
+  background-color: var(--light-blue);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  border: #000 solid 1px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column; 
+  align-content: center;
+  justify-content: center;
+  max-width: 50rem;
+}
+
+h1{
+  background-color: var(--color-sec);
+  padding: 5px;
+  color: white;
+  font-size: 4rem;
+}
+
+form, form > *{
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+form div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label, input, select {
+  font-size: 1.6rem;
+  padding: 7px;
+  width: 20rem;
+  text-align: left;
+}
+
+#btn_submit{
+  background-color: var(--color-sec);
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#btn_submit:active{
+  background-color: var(--color-primary);
+  color: white;
+}
+#error{
+  display: none;
+  color: red;
+}
+
+#output{
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: left;
+}
+
+#output > *{
+  background-color: var(--grey);
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+#final_bill {
+  color: red;
+}
+

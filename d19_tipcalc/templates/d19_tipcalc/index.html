@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <script
+      src="https://kit.fontawesome.com/1935d064dd.js"
+      crossorigin="anonymous"
+    ></script>
+    {% load static %}
+    <link rel="stylesheet" href={% static 'd19_tipcalc/styles.css'  %} />
+    <link rel="shortcut icon" type="image/x-icon"  href={% static '/d19_tipcalc/favicon.ico'  %} />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h1>Tip Calculator</h1>
+        <form>
+          <div id="bill_box">
+            <label for="bill">Given Bill:</label>
+            <input type="text" id="bill" placeholder="$">
+        </div>
+        <div id="rate_box">
+          <label for="rate">Tip Rate:</label>
+          <select id="rate">
+            <option value="0" disabled selected>--Select an Option--</option>
+            <option value="0.1">10% - Fine</option>
+            <option value="0.15">15% - Good</option>
+            <option value="0.20">20% - Great</option>
+            <option value="0.25">25% - Excellent</option>
+          </select>
+        </div>
+        <button type="button" id="btn_submit">Calculate</button>
+        <p id="error">Enter Bill and Rate Service to Determine Tip</p>
+        </form>
+        <hr>
+        <div id="output">
+            <h2 id="final_tip">Tip Amount: </h2>
+            <h2 id="final_bill">Total Bill: </h2>
+        </div>
+      </div>
+    </section>
+    <script src="{% static '19_tipcalc/script.js' %}"></script>
+  </body>
+</html>
