@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     'd19_tipcalc',
     'd20_smoothscroll',
     'd21_stickynav',
+    'd22_activemenu',
     'bootstrap5'
     ]
 

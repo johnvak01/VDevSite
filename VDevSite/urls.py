@@ -41,6 +41,7 @@ urlpatterns = [
     path('d19_tipcalc/',include("d19_tipcalc.urls")),
     path('d20_smoothscroll/',include("d20_smoothscroll.urls")),
     path('d21_stickynav/',include("d21_stickynav.urls")),
+    path('d22_activemenu/',include("d22_activemenu.urls")),
     
     ]
 
