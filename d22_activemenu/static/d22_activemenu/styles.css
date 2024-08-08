@@ -94,12 +94,24 @@ header.sticky .logo{
   text-decoration: none;
   font-size: 1.6rem;
 }
+.nav-list li.active a {
+  color: var(--color-sec);
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
 header.sticky .nav-list li a {
   color: var(--dark-grey);
   text-decoration: none;
   font-size: 1.6rem;
 }
 
+header.sticky .nav-list li.active a {
+  color: var(--color-sec);
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
 .header{
 width: 100%;
 height: 90vh;

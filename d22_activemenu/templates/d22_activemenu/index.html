@@ -12,8 +12,8 @@
       crossorigin="anonymous"
     ></script>
     {% load static %}
-    <link rel="stylesheet" href={% static 'd21_stickynav/styles.css'  %} />
-    <link rel="shortcut icon" type="image/x-icon"  href={% static 'd21_stickynav/favicon.ico'  %} />
+    <link rel="stylesheet" href={% static 'd22_activemenu/styles.css'  %} />
+    <link rel="shortcut icon" type="image/x-icon"  href={% static 'd22_activemenu/favicon.ico'  %} />
   </head>
   <body>
     <header>
@@ -21,16 +21,16 @@
         <nav>
           <div class="logo">Logo</div>
           <ul class="nav-list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#two">Two</a></li>
-            <li><a href="#three">Three</a></li>
-            <li><a href="#four">Four</a></li>
-            <li><a href="#five">Five</a></li>
+            <li class="link active"><a href="#home">Home</a></li>
+            <li class="link" ><a href="#two">Two</a></li>
+            <li class="link" ><a href="#three">Three</a></li>
+            <li class="link" ><a href="#four">Four</a></li>
+            <li class="link" ><a href="#five">Five</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <section class="header"></section>
+    <section class="header" id="home"></section>
     <section id="two">
       <div class="container">
         <h2>Section 2</h2>
@@ -67,6 +67,6 @@
         </div>
       </div>
     </section>
-    <script src="{% static 'd21_stickynav/script.js' %}"></script>
+    <script src="{% static 'd22_activemenu/script.js' %}"></script>
   </body>
 </html>
