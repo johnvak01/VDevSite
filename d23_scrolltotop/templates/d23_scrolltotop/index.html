@@ -7,13 +7,9 @@
     {% load bootstrap5 %}
     {% bootstrap_css %}
     {% bootstrap_javascript %}
-    <script
-      src="https://kit.fontawesome.com/1935d064dd.js"
-      crossorigin="anonymous"
-    ></script>
     {% load static %}
-    <link rel="stylesheet" href={% static 'd22_activemenu/styles.css'  %} />
-    <link rel="shortcut icon" type="image/x-icon"  href={% static 'd22_activemenu/favicon.ico'  %} />
+    <link rel="stylesheet" href={% static 'd23_scrolltotop/styles.css'  %} />
+    <link rel="shortcut icon" type="image/x-icon"  href={% static 'd23_scrolltotop/favicon.ico'  %} />
   </head>
   <body>
     <header>
@@ -67,6 +63,7 @@
         </div>
       </div>
     </section>
-    <script src="{% static 'd22_activemenu/script.js' %}"></script>
+    <button class="top">&uarr;</button>
+    <script src="{% static 'd23_scrolltotop/script.js' %}"></script>
   </body>
 </html>
