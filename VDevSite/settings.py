@@ -60,6 +60,7 @@ INSTALLED_APPS = [
     'd21_stickynav',
     'd22_activemenu',
     'd23_scrolltotop',
+    'd24_rmm1',
     'bootstrap5'
     ]
 

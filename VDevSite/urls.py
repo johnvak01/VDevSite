@@ -43,6 +43,7 @@ urlpatterns = [
     path('d21_stickynav/',include("d21_stickynav.urls")),
     path('d22_activemenu/',include("d22_activemenu.urls")),
     path('d23_scrolltotop/',include("d23_scrolltotop.urls")),
+    path('d24_rmm1/',include("d24_rmm1.urls")),
     
     ]
 
