@@ -61,6 +61,7 @@ INSTALLED_APPS = [
     'd22_activemenu',
     'd23_scrolltotop',
     'd24_rmm1',
+    'd25_rmm2',
     'bootstrap5'
     ]
 
