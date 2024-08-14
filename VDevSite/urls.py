@@ -45,6 +45,7 @@ urlpatterns = [
     path('d23_scrolltotop/',include("d23_scrolltotop.urls")),
     path('d24_rmm1/',include("d24_rmm1.urls")),
     path('d25_rmm2/',include("d25_rmm2.urls")),
+    path('d26_submenu/',include("d26_submenu.urls")),
     
     ]
 
