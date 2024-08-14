@@ -17,21 +17,26 @@ function smoothScroll(e){
 }
 
 const menu = document.querySelector(".nav-list");
+const menu_wrapper = document.querySelector(".nav-wrapper");
 const hamburger = document.querySelector(".bi-list");
 const close = document.querySelector(".bi-x");
 
 const showMenu = ()=>{
   hamburger.style.display="none";
   close.style.transform="translateY(-5px)";
-  menu.style.transform="TranslateY(0)";
+  menu.style.transform="TranslateX(0)";
+  menu_wrapper.style.transform="TranslateX(0)";
 }
 
 const hideMenu = ()=>{
   hamburger.style.display="block";
   close.style.transform="translateY(-20rem)";
-  menu.style.transform="TranslateY(-200rem)";
+  menu.style.transform="TranslateX(-200rem)";
+  menu_wrapper.style.transform="TranslateX(200%)";
 }
+
 
 hamburger.addEventListener("click", showMenu);
 close.addEventListener("click", hideMenu);
+menu_wrapper.addEventListener("click", hideMenu);
 window.addEventListener("resize",()=>{if(window.innerWidth>600){hamburger.style.display="none";close.style.transform="transformY(-200rem)";}else{hamburger.style.display="block";}});
