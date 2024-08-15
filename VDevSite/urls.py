@@ -47,6 +47,7 @@ urlpatterns = [
     path('d25_rmm2/',include("d25_rmm2.urls")),
     path('d26_submenu/',include("d26_submenu.urls")),
     path('d27_scrollindicator/',include("d27_scrollindicator.urls")),
+    path('d28_newsletter/',include("d28_newsletter.urls")),
     
     ]
 
