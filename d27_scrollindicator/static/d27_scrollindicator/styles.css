@@ -131,7 +131,7 @@ h2 {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 111;
+  z-index: 222;
   background-color: var(--color-primary);
   visibility: hidden;
 }
@@ -139,6 +139,7 @@ h2 {
   width: 0%;
   height: 3px;
   background-color: var(--color-sec);
+  transition: all 0.1s; 
   visibility: hidden;
 }
 
