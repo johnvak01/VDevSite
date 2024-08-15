@@ -150,3 +150,29 @@ h2 {
   }
 
 }
+
+/*newsletter*/
+.newsletter{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: var(--white);
+  border: dashed 2px var(--color-primary);
+  padding: 2rem 3rem;
+  transform: translate(-100%);
+  transition: all 0.5s;
+}
+
+.bi-x{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.4rem;
+  color: red;
+  cursor: pointer;
+}
+
+.bi-envelope{
+  font-size: 2.5rem;
+}
+
