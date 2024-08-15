@@ -33,6 +33,8 @@ const hideMenu = ()=>{
   close.style.transform="translateY(-20rem)";
   menu.style.transform="TranslateX(-200rem)";
   menu_wrapper.style.transform="TranslateX(200%)";
+  
+  subMenuThree.style.transform = "translateX(-100%)";
 }
 
 
@@ -40,3 +42,20 @@ hamburger.addEventListener("click", showMenu);
 close.addEventListener("click", hideMenu);
 menu_wrapper.addEventListener("click", hideMenu);
 window.addEventListener("resize",()=>{if(window.innerWidth>600){hamburger.style.display="none";close.style.transform="transformY(-200rem)";}else{hamburger.style.display="block";}});
+
+//submenu
+const thirdLink = document.querySelector(".third-link");
+const returnLink = document.querySelector(".return");
+const subMenuThree = document.querySelector(".submenu-three");
+
+thirdLink.addEventListener("click", ()=>{
+  menu.style.transform = "translateX(-100%)";
+  subMenuThree.style.transform = "translateX(0)";
+});
+returnLink.addEventListener("click", ()=>{
+  menu.style.transform = "translateX(0)";
+  subMenuThree.style.transform = "translateX(-100%)";
+});
+
+
+
