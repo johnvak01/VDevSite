@@ -48,6 +48,7 @@ urlpatterns = [
     path('d26_submenu/',include("d26_submenu.urls")),
     path('d27_scrollindicator/',include("d27_scrollindicator.urls")),
     path('d28_newsletter/',include("d28_newsletter.urls")),
+    path('d29_pganime',include("d29_pganime.urls")),
     
     ]
 

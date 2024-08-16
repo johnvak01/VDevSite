@@ -65,6 +65,7 @@ INSTALLED_APPS = [
     'd26_submenu',
     'd27_scrollindicator',
     'd28_newsletter',
+    'd29_pganime',
     'bootstrap5'
     ]
 
