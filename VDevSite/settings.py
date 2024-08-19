@@ -68,6 +68,7 @@ INSTALLED_APPS = [
     'd29_pganime',
     'd30_pwgen',
     'd31_localstorage',
+    'd32_todo',
     'bootstrap5'
     ]
 
