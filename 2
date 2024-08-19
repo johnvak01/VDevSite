@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    {% load static %}
+    <link rel="stylesheet" href={% static 'd30_pwgen/styles.css'  %} />
+    <link rel="shortcut icon" type="image/x-icon"  href={% static 'd30_pwgen/favicon.ico'  %} />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h1> Password Generator </h1>
+        <div class="output">
+          <h2 id="output-text"></h2>
+          <button type="button" id="cpy-btn">Copy</button>
+        </div>
+        <div class="options">
+          <form action="" method="">
+            <div class="form-field">
+              <label for="length-field">Include Uppercase</label>
+              <input id="length-field" type="number" min="12" max="24" value="12">
+            </div> 
+            <div class="form-field">
+              <label for="uc-check">Include Uppercase</label>
+              <input id="uc-check" type="checkbox">
+            </div> 
+            <div class="form-field">
+              <label for="lc-check">Include Lowercase</label>
+              <input id="lc-check" type="checkbox">
+            </div> 
+            <div class="form-field">
+              <label for="num-check">Include Numbers</label>
+              <input id="num-check" type="checkbox">
+            </div> 
+            <div class="form-field">
+              <label for="sym-check">Include Symbols</label>
+              <input id="sym-check" type="checkbox">
+            </div> 
+            <button type="submit" id="submit-btn">Generate Password</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="{% static 'd30_pwgen/script.js' %}"></script>
+  </body>
+</html>

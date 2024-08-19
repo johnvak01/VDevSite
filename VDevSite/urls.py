@@ -49,6 +49,7 @@ urlpatterns = [
     path('d27_scrollindicator/',include("d27_scrollindicator.urls")),
     path('d28_newsletter/',include("d28_newsletter.urls")),
     path('d29_pganime',include("d29_pganime.urls")),
+    path('d30_pwgen',include("d30_pwgen.urls")),
     
     ]
 

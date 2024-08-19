@@ -66,6 +66,7 @@ INSTALLED_APPS = [
     'd27_scrollindicator',
     'd28_newsletter',
     'd29_pganime',
+    'd30_pwgen',
     'bootstrap5'
     ]
 
