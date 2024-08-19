@@ -67,6 +67,7 @@ INSTALLED_APPS = [
     'd28_newsletter',
     'd29_pganime',
     'd30_pwgen',
+    'd31_localstorage',
     'bootstrap5'
     ]
 
