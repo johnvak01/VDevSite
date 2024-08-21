@@ -69,6 +69,7 @@ INSTALLED_APPS = [
     'd30_pwgen',
     'd31_localstorage',
     'd32_todo',
+    'd33_notes',
     'bootstrap5'
     ]
 
