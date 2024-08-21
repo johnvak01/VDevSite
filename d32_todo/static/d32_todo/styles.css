@@ -35,7 +35,139 @@ img {
 }
 
 .container {
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 600px;
+  margin: 5rem auto;
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  background-color: var(--light-blue);
 }
+
+body{
+  background-color: var(--grey);
+}
+section{
+  width: 100vw;
+  padding: 0 3rem;
+
+}
+
+.add-block{
+  width: 70%;
+  padding: 5rem 0;
+  margin: 1rem auto;
+  border: 0px;
+  border-radius: 3px;
+
+  text-align: center;
+  background-color: var(--color-primary);
+}
+
+.add-block form{
+  display: flex;
+  justify-content: center;
+}
+
+#task-field{
+  padding: 1rem auto;
+  font-size: 1.8rem;
+  color: var(--white);
+  width: 75%;
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,0.7);
+  outline: none;
+  background-color: transparent;
+  margin-right: 5px;
+}
+
+#task-field::placeholder{
+  color: rgba(255,255,255,0.7);
+}
+
+#add-btn{
+  color: var(--white);
+  background-color: var(--color-sec);
+  border: none;
+  padding: 1rem;
+  border-radius: 3px;
+}
+
+h1{
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--grey);
+  margin-bottom: 1rem;
+}
+
+.list-block{}
+
+#task-list{
+}
+
+.task-item{
+  background-color: var(--grey);
+  color: var(--dark-grey);
+  font-size: 1.6rem;
+  margin: 5px 0;
+  padding: 0.5rem; 
+  border-radius: 3px;
+  position: relative;
+}
+
+.task-delete{
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.task-item::marker{
+  color: var(--grey);
+}
+
+.task-item:nth-child(odd){
+  background-color: var(--dark-grey);
+  color: var(--grey);
+}
+
+.bi-trash{
+  color: var(--color-sec);
+}
+.task-delete{
+  background-color: transparent;
+}
+hr{}
+
+.clear-block{}
+
+#clear-btn{
+  font-size: 1.6rem;
+  background-color: var(--blue);
+  color: var(--color-sec);
+  border: none;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+#sync-btn{
+  font-size: 1.6rem;
+  background-color: var(--blue);
+  color: var(--color-sec);
+  border: none;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+#storage-form{
+  margin: 1rem auto;
+}
+
+label{
+  color: var(--white);
+  font-size: 1.6rem;
+}
+

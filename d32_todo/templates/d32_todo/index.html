@@ -13,8 +13,32 @@
     <link rel="shortcut icon" type="image/x-icon"  href={% static 'd32_todo/favicon.ico'  %} />
   </head>
   <body>
-    <p>Hello World!!!</p>
+    <section>
+      <div class="container">
+        <div class="add-block">
+          <form action="" onsubmit="return false">
+            <input id="task-field" type="text" placeholder="new task">
+            <button type="button" id="add-btn">Add</button>
+          </form>
+        </div>
+        <div class="list-block">
+          <h1>Tasks To-Do</h1>
+          <hr>
+          <ol id="task-list">
+          </ol>
+          <hr>
+        </div>
+        <div class="clear-block">
+          <button id="clear-btn">Clear All Tasks</button>
+          <form action="" id="storage-form">
+            <label for="tgl-storage">Autosave to Storage</label>
+            <input id="tgl-storage" type="checkbox" checked>
+            <button type="button" id="sync-btn">Sync w/ Storage</button>
+          </form>
+        </div>
+     </div>
+    </section>
 
-    <script src="{% static 'd32_todo/script.js' %}"></script>
+    <script src="{% static 'd32_todo/script2.js' %}"></script>
   </body>
 </html>
