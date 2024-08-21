@@ -13,7 +13,50 @@
     <link rel="shortcut icon" type="image/x-icon"  href={% static 'd33_notes/favicon.ico'  %} />
   </head>
   <body>
-    <p>Hello World!!!</p>
+    <header>
+      <nav class="navbar navbar-dark bg-dark">
+        <div>
+          <h1 class="text-light">Smart Notes</h1>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="container section-container">
+        <div class=form-container">
+          <h2>Note Editor</h2>
+          <hr>
+          <form action="" method="">
+            <input type="text" id="note-title" placeholder="Note Title"></input>
+            <textarea id="note-text" cols="30" rows="10"></textarea>
+            <button type="button" id="add-btn">Add Note</button>
+          </form>
+        </div>
+        <div class="notes-container">
+          <div class="container">
+            <div class="notes-header">
+               <h2>Your Notes</h2>
+                <button id="clear-btn">Clear All Notes</button>
+            </div>
+              <hr>
+            <div id="notes">
+              <div class="note">
+                <div class="note-cta">
+                  <p class="note-counter">Note 1</p>
+                  <div class="note-cta-btn">
+                    <button type="button" class="del-btn"><i class="bi bi-trash"></i>Delete</button>
+                    <button type="button" class="edit-btn"><i class="bi bi-pencil-square"></i>Edit</button>
+                  </div>
+                </div>
+                <hr>
+                <h3 class="note-title">Title: Example</h3>
+                <p class="note-text">exmple writing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section></section>
 
     <script src="{% static 'd33_notes/script.js' %}"></script>
   </body>
