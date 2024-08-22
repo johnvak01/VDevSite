@@ -53,6 +53,7 @@ urlpatterns = [
     path('d31_localstorage',include("d31_localstorage.urls")),
     path('d32_todo',include("d32_todo.urls")),
     path('d33_notes',include("d33_notes.urls")),
+    path('d34_bmi',include("d34_bmi.urls")),
     
     ]
 

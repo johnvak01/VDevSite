@@ -70,6 +70,7 @@ INSTALLED_APPS = [
     'd31_localstorage',
     'd32_todo',
     'd33_notes',
+    'd34_bmi',
     'bootstrap5'
     ]
 
