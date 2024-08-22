@@ -23,6 +23,8 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: var(--grey);
+
 }
 
 p {
@@ -34,8 +36,52 @@ img {
   width: 100%;
 }
 
+section{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
-  max-width: 900px;
+  max-width: 40rem;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 2rem;
+  background-color: var(--light-blue);
+  color: var(--white);
+}
+
+h1{
+  font-size: 3rem;
+  text-align: center;
+}
+
+form{
+  padding: 1rem 0;
+  font-size: 1.6rem
+}
+form >*{
+  padding-bottom: 1rem;
+}
+
+form input, .btn{
+  padding: 1rem;
+  width: 100%;
+}
+
+.btn{
+  font-size: 1.6rem;
+  color: var(--white);
+  background-color: var(--color-sec);
+  cursor: pointer;
+}
+
+#reset{
+  background-color: var(--color-primary);
+  display: none;
+}
+
+.result{
+  padding: 1rem;
+  
 }
