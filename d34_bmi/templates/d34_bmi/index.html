@@ -13,8 +13,25 @@
     <link rel="shortcut icon" type="image/x-icon"  href={% static 'd34_bmi/favicon.ico'  %} />
   </head>
   <body>
-    <p>Hello World!!!</p>
-
+    <section>
+      <div class="container">
+        <h1>BMI Calculator</h1>
+        <hr>
+        <form action="" method="">
+          <div>
+            <label for="height"> Height in cm</label>
+            <input type="text" id="height"></input>
+          </div>
+          <div>
+            <label for="weight"> Weight in kg</label>
+            <input type="text" id="weight"></input>
+          </div>
+          <button class="btn" type=button>Calculate</button>
+        </form>
+        <p id="result"></p>
+        <button id="reset" class="btn">Reset</button>
+      </div>
+    </section>
     <script src="{% static 'd34_bmi/script.js' %}"></script>
   </body>
 </html>
