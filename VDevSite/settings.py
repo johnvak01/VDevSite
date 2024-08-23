@@ -72,6 +72,7 @@ INSTALLED_APPS = [
     'd33_notes',
     'd34_bmi',
     'd35_calc',
+    'd36_clock',
     'bootstrap5'
     ]
 
