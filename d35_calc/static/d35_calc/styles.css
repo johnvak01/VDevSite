@@ -23,6 +23,7 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: var(--light-blue);
 }
 
 p {
@@ -38,4 +39,79 @@ img {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.box{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc{
+  background-color: var(--grey);
+  position: relative;
+  width: 30rem;
+  height: 35rem;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 3px;
+  margin: 1rem;
+}
+.result{
+  color: var(--dark-grey);
+  background-color: var(--white);
+  height: 4.5rem;
+  width: 70%;
+  padding: 1rem;
+  border-radius: 3px; 
+  margin-bottom: 5px;
+  border: 2px solid var(--color-sec);
+  
+}
+.clear{
+  width: 20%;
+  height: 4.5rem;
+  background-color: red;
+  padding: 1rem;
+  position: absolute;
+  right: 2rem;
+  top: 1.6rem;
+  border-radius: 3px;
+  color: var(--white);
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.keys{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 5px;
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 0;
+}
+
+.keys li{
+  list-style: none;
+  width: 5rem;
+  background-color: white;
+  margin: 1rem 0.5rem;
+  padding: 1rem;
+  border-bottom: 1px solid var(--color-primary);
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+  color: var(--dark-grey);
+  transition: all 0.1s;
+}
+
+.keys li:hover{
+  background-color: var(--dark-grey);
+  color: var(--white);
+}
+
+.keys .equals{
+  background-color: orangered;
+  color: var(--white);
 }
