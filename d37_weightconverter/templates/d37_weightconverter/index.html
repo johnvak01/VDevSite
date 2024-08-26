@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    {% load static %}
+    <link rel="stylesheet" href={% static 'd37_weightconverter/styles.css'  %} />
+    <link rel="shortcut icon" type="image/x-icon"  href={% static 'd37_weightconverter/favicon.ico'  %} />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row d-flex justify-content-center mt-5"> 
+        <div class="col-md-6">
+          <h1 class="text-center fw-border display-3 bg-dark text-white py-3">Weight Converter</h1>
+          <hr />
+          <form>
+            <p class="alert alert-info">Type a value in any field to convert weight.</p>
+            <div class="mb-3">
+              <label for="" class="form-label">Weight in lb</label>
+              <input id="lb" class="form-control form-control-lg" type="number" placeholder="lb"></input>
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Weight in kg</label>
+              <input id="kg" class="form-control form-control-lg" type="number" placeholder="kg"></input>
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Weight in g</label>
+              <input id="g" class="form-control form-control-lg" type="number" placeholder="g"></input>
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Weight in oz</label>
+              <input id="oz" class="form-control form-control-lg" type="number" placeholder="oz"></input>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <script src="{% static 'd37_weightconverter/script.js' %}"></script>
+  </body>
+</html>

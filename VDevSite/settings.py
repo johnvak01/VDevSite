@@ -73,6 +73,7 @@ INSTALLED_APPS = [
     'd34_bmi',
     'd35_calc',
     'd36_clock',
+    'd37_weightconverter',
     'bootstrap5'
     ]
 
