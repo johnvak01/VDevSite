@@ -30,12 +30,93 @@ p {
   line-height: 1.5;
 }
 
-img {
-  width: 100%;
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  background-color: var(--black);
+  color: var(--white);
 }
 
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
 .container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 20px;
+  background: url(forest1.gif) center no-repeat;
+  position: relative;
+}
+.container::after{
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding:0;
+  background-color: rgba(0,0,255,.5)
+}
+.game{
+  width: 500px;
+  height: 200px;
+  margin: auto;
+  border-bottom: 3px solid var(--white);
+}
+.hero{
+  position: relative;
+  width: 20px;
+  height: 50px;
+  top: 115px;
+  left: 20px;
+  z-index: 100;
+}
+.hero-boy{
+  height: 50px;
+  width: 50px;
+}
+
+.villain{
+  position: relative;
+  width: 20px;
+  height: 20px;
+  top: 75px;
+  left: 450px;
+  z-index: 100;
+  
+  /*animation: move 1s infinite linear;*/
+}
+.villain-wolf{
+  height: 50px;
+  width: 50px;
+}
+
+
+/*Animation*/
+
+.animate{
+  animation: jump 0.5s linear;
+}
+
+@keyframes jump{
+  from{
+    top: 115px;
+  }
+  50%{
+    top: 15px;
+  }
+  to{
+    top: 115px;
+  }
+}
+
+@keyframes move{
+  0%{
+    left: 450px
+  }
+  100%{
+    left: 0px
+  }
 }

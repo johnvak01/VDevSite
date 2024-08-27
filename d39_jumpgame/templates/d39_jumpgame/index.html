@@ -13,7 +13,20 @@
     <link rel="shortcut icon" type="image/x-icon"  href={% static 'd39_jumpgame/favicon.ico'  %} />
   </head>
   <body>
-
+    <section>
+        <h1>Jump Game</h1>
+      <div class="container">
+        <div class="game">
+          <p>Press SPACE-BAR to start.</p>
+          <div class="hero">
+            <img class="hero-boy" src="{% static '/d39_jumpgame/hero.gif' %}" alt="hero"></img>
+          </div>
+          <div class="villain">
+            <img class="villain-wolf" src="{% static '/d39_jumpgame/wolf.gif' %}" alt="hero"></img>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="{% static 'd39_jumpgame/script.js' %}"></script>
   </body>
 </html>
