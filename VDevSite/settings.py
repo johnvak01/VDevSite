@@ -74,6 +74,7 @@ INSTALLED_APPS = [
     'd35_calc',
     'd36_clock',
     'd37_weightconverter',
+    'd38_tempconverter',
     'bootstrap5'
     ]
 

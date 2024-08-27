@@ -57,6 +57,7 @@ urlpatterns = [
     path('d35_calc',include("d35_calc.urls")),
     path('d36_clock',include("d36_clock.urls")),
     path('d37_weightconverter',include("d37_weightconverter.urls")),
+    path('d38_tempconverter',include("d38_tempconverter.urls")),
     
     ]
 
