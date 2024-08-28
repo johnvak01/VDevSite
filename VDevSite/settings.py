@@ -77,6 +77,7 @@ INSTALLED_APPS = [
     'd38_tempconverter',
     'd39_jumpgame',
     'd40_wordcount',
+    'd41_accordian',
     'bootstrap5'
     ]
 

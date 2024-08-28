@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    {% load static %}
+    <link rel="stylesheet" href={% static 'd41_accordian/styles.css'  %} />
+    <link rel="shortcut icon" type="image/x-icon"  href={% static 'd41_accordian/favicon.ico'  %} />
+  </head>
+  <body>
+  <section>
+    <div class="container">
+      <h1>Section</h1>
+      <div class="accordian">
+        <p>Who we are</p>
+      </div>
+      <div class="desc">
+        <p>A Possum</p>
+      </div>
+      <div class="accordian">
+        <p>What we do</p>
+      </div>
+      <div class="desc">
+        <p>Scream</p>
+      </div>
+      <div class="accordian">
+        <p>How to get started</p>
+      </div>
+      <div class="desc">
+        <p>AAAAAAAAAHHHHHHHH!!!!!!</p>
+      </div>
+    </div>
+  </section>
+  <script src="{% static 'd41_accordian/script.js' %}"></script>
+  </body>
+</html>
