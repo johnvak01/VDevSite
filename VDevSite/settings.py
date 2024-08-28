@@ -78,6 +78,7 @@ INSTALLED_APPS = [
     'd39_jumpgame',
     'd40_wordcount',
     'd41_accordian',
+    'd42_jokegen',
     'bootstrap5'
     ]
 

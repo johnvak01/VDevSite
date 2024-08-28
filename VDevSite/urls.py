@@ -61,6 +61,7 @@ urlpatterns = [
     path('d39_jumpgame',include("d39_jumpgame.urls")),
     path('d40_wordcount',include("d40_wordcount.urls")),
     path('d41_accordian',include("d41_accordian.urls")),
+    path('d42_jokegen',include("d42_jokegen.urls")),
     
     ]
 
