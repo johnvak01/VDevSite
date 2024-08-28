@@ -59,6 +59,7 @@ urlpatterns = [
     path('d37_weightconverter',include("d37_weightconverter.urls")),
     path('d38_tempconverter',include("d38_tempconverter.urls")),
     path('d39_jumpgame',include("d39_jumpgame.urls")),
+    path('d40_wordcount',include("d40_wordcount.urls")),
     
     ]
 
