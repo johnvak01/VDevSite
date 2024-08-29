@@ -79,6 +79,7 @@ INSTALLED_APPS = [
     'd40_wordcount',
     'd41_accordian',
     'd42_jokegen',
+    'd43_module',
     'bootstrap5'
     ]
 
