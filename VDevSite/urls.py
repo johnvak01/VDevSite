@@ -63,6 +63,7 @@ urlpatterns = [
     path('d41_accordian',include("d41_accordian.urls")),
     path('d42_jokegen',include("d42_jokegen.urls")),
     path('d43_module',include("d43_module.urls")),
+    path('d44_githubsearch',include("d44_githubsearch.urls")),
     
     ]
 

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    {% load static %}
+    <link rel="stylesheet" href={% static 'd44_githubsearch/styles.css'  %} />
+    <link rel="shortcut icon" type="image/x-icon"  href={% static 'd44_githubsearch/favicon.ico'  %} />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container">
+        <a href="" class="navbar-brand">
+          <i class="bi bi-github"></i> 
+          Github Profile Search
+        </a>
+      </div>
+      <form class="d-flex" action="">
+        <input type="text" class="form-control me-2 search" placeholder="Enter User-Name"></input>
+        <button type="button" class="btn btn-outline-success">Search</button>
+      </form>
+    </nav>
+    <section>
+      
+      <div id="personal-info" class="container">
+        <div class="row pt-5">
+          <!-- firstsection-->
+          <div class="col col-3 ml-3">
+            <div class="profile">
+              <img src="{% static 'd44_githubsearch/favicon.ico' %}" alt="image" class="img-thumbnail rounded-circle"></img>
+              <h2>Name</h2>
+              <div class="d-grid">
+                <a href="" class="btn btn-outline-secondary">
+                  View Profile
+                </a>
+              </div>
+              <p class="pt-5">
+                <span >Followers</span>
+                <span> Following</span>
+              </p>
+              <p>Repos</p>
+              <p>
+                <i class="bi bi-geo-alt-fill"></i>
+                Location
+              </p>
+            </div>
+          </div>
+          <!-- second section-->
+          <div class="col col-8 mr-3">
+            <h1>Latest Repositories</h1>
+            <div class="repos row row-cols-2 g-3">
+              <div id="alert search-error"><p class="alert alert-danger">Search username in Above Field</p></div>
+              <div id="alert search-error"><p class="alert alert-danger">User Not Found</p></div>
+              <div class="col repo">
+                <div class="border rounded p-3">
+                  <p><a href="" target="_blank" rel="noopener">Link</a></p>
+                  <p>Stars: | Watchers: | Forks: </p>
+                </div>
+              </div>
+              <div class="col repo">
+                <div class="border rounded p-3">
+                  <p><a href="" target="_blank" rel="noopener">Link</a></p>
+                  <p>Stars: | Watchers: | Forks: </p>
+                </div>
+              </div>
+              <div class="col repo">
+                <div class="border rounded p-3">
+                  <p><a href="" target="_blank" rel="noopener">Link</a></p>
+                  <p>Stars: | Watchers: | Forks: </p>
+                </div>
+              </div>
+              <div class="col repo">
+                <div class="border rounded p-3">
+                  <p><a href="" target="_blank" rel="noopener">Link</a></p>
+                  <p>Stars: | Watchers: | Forks: </p>
+                </div>
+              </div>
+              <div class="col repo">
+                <div class="border rounded p-3">
+                  <p><a href="" target="_blank" rel="noopener">Link</a></p>
+                  <p>Stars: | Watchers: | Forks: </p>
+                </div>
+              </div>
+              <div class="col repo">
+                <div class="border rounded p-3">
+                  <p><a href="" target="_blank" rel="noopener">Link</a></p>
+                  <p>Stars: | Watchers: | Forks: </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+    <script type= "module" src="{% static 'd44_githubsearch/script.js' %}"></script>
+  </body>
+</html>

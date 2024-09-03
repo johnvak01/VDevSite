@@ -80,6 +80,7 @@ INSTALLED_APPS = [
     'd41_accordian',
     'd42_jokegen',
     'd43_module',
+    'd44_githubsearch',
     'bootstrap5'
     ]
 
