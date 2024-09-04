@@ -64,7 +64,6 @@ img {
   position: absolute;
   top: 5rem;
   left: 5rem;
-  opacity: 0;
   width: 55%;
   color: var(--white);
   padding: 3rem;
@@ -89,6 +88,7 @@ img {
   border-radius: 50%;
   position: absolute;
   top: 35%;
+  z-index:200;
 }
 
 .prev{
@@ -103,4 +103,5 @@ img {
 .slide-controls button:hover{
   background-color: var(--light-blue);
 }
+
 
