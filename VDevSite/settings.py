@@ -82,6 +82,7 @@ INSTALLED_APPS = [
     'd43_module',
     'd44_githubsearch',
     'd45_wikisearch',
+    'd47_imgslider',
     'bootstrap5'
     ]
 

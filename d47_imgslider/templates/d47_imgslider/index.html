@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    {% load static %}
+    <link rel="stylesheet" href={% static 'd47_imgslider/styles.css'  %} />
+    <link rel="shortcut icon" type="image/x-icon"  href={% static 'd47_imgslider/favicon.ico'  %} />
+  </head>
+  <body>
+    <div class="slider">
+      <div class="current slide">
+        <img src= {% static '/d47_imgslider/slide1.jpg' %}></img>
+        <div class="content current">
+          <h1>Slide1</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at lacus id velit consectetur malesuada. Duis vel eleifend metus. Nullam sit amet vulputate turpis. Etiam pellentesque vitae turpis vel porta. Sed est arcu, posuere vitae sem eu, hendrerit volutpat sapien. Nulla metus ante, eleifend ac arcu ac, euismod ultricies est. Aenean gravida congue risus, sit amet pellentesque nibh euismod a. Donec ultrices justo vitae scelerisque ultrices. Phasellus in diam vel arcu blandit consequat. Integer molestie sed lacus ut blandit. Quisque venenatis enim et neque congue, id pretium nibh convallis. Vivamus molestie nibh eget mauris pellentesque, at eleifend enim imperdiet. Phasellus non erat et eros mattis porttitor vitae ac libero. Phasellus euismod odio et urna molestie, in volutpat ante feugiat. In et cursus mauris. </p>
+          <button class="btn btn-primary btn-lg">Lorem Ipsum</button>
+        </div>
+      </div>
+      <div class="slide">
+        <img src= {% static '/d47_imgslider/slide2.jpg' %}></img>
+        <div class="content">
+          <h1>Slide2</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at lacus id velit consectetur malesuada. Duis vel eleifend metus. Nullam sit amet vulputate turpis. Etiam pellentesque vitae turpis vel porta. Sed est arcu, posuere vitae sem eu, hendrerit volutpat sapien. Nulla metus ante, eleifend ac arcu ac, euismod ultricies est. Aenean gravida congue risus, sit amet pellentesque nibh euismod a. Donec ultrices justo vitae scelerisque ultrices. Phasellus in diam vel arcu blandit consequat. Integer molestie sed lacus ut blandit. Quisque venenatis enim et neque congue, id pretium nibh convallis. Vivamus molestie nibh eget mauris pellentesque, at eleifend enim imperdiet. Phasellus non erat et eros mattis porttitor vitae ac libero. Phasellus euismod odio et urna molestie, in volutpat ante feugiat. In et cursus mauris. </p>
+          <button class="btn btn-primary btn-lg">Lorem Ipsum</button>
+        </div>
+      </div>
+      <div class="slide">
+        <img src= {% static '/d47_imgslider/slide3.jpg' %}></img>
+        <div class="content">
+          <h1>Slide3</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at lacus id velit consectetur malesuada. Duis vel eleifend metus. Nullam sit amet vulputate turpis. Etiam pellentesque vitae turpis vel porta. Sed est arcu, posuere vitae sem eu, hendrerit volutpat sapien. Nulla metus ante, eleifend ac arcu ac, euismod ultricies est. Aenean gravida congue risus, sit amet pellentesque nibh euismod a. Donec ultrices justo vitae scelerisque ultrices. Phasellus in diam vel arcu blandit consequat. Integer molestie sed lacus ut blandit. Quisque venenatis enim et neque congue, id pretium nibh convallis. Vivamus molestie nibh eget mauris pellentesque, at eleifend enim imperdiet. Phasellus non erat et eros mattis porttitor vitae ac libero. Phasellus euismod odio et urna molestie, in volutpat ante feugiat. In et cursus mauris. </p>
+          <button class="btn btn-primary btn-lg">Lorem Ipsum</button>
+        </div>
+      </div>
+    </div>
+      <div class="slide-controls">
+        <button class="buttons prev"><i class="bi bi-caret-left"></i></button>
+        <button class="buttons next"><i class="bi bi-caret-right"></i></button>
+      </div>
+    <script type= "module" src="{% static 'd47_imgslider/script.js' %}"></script>
+  </body>
+</html>
+
