@@ -64,6 +64,7 @@ urlpatterns = [
     path('d42_jokegen',include("d42_jokegen.urls")),
     path('d43_module',include("d43_module.urls")),
     path('d44_githubsearch',include("d44_githubsearch.urls")),
+    path('d45_wikisearch',include("d45_wikisearch.urls")),
     
     ]
 

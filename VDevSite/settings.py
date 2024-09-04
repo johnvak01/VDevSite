@@ -81,6 +81,7 @@ INSTALLED_APPS = [
     'd42_jokegen',
     'd43_module',
     'd44_githubsearch',
+    'd45_wikisearch',
     'bootstrap5'
     ]
 
