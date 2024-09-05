@@ -38,7 +38,7 @@ img {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 20px;
-  height: 100vh;
+  height: 100%;
   background-color: var(--grey);
 }
 
@@ -46,3 +46,19 @@ img {
   list-style-type: none;
   padding: 0;
 }
+.result{
+  border: 1px solid var(--dark-grey);
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1.6rem;
+  border-radius: 3px;
+}
+
+#array{
+  background-color: var(--light-blue);
+  border-radius: 3px;
+  padding: 1rem;
+  margin: 1rem;
+  color: var(--white);
+}
+
