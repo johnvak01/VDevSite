@@ -66,6 +66,7 @@ urlpatterns = [
     path('d44_githubsearch',include("d44_githubsearch.urls")),
     path('d45_wikisearch',include("d45_wikisearch.urls")),
     path('d47_imgslider',include("d47_imgslider.urls")),
+    path('d48_arraymethods',include("d48_arraymethods.urls")),
     
     ]
 

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    {% load static %}
+    <link rel="stylesheet" href={% static 'd48_arraymethods/styles.css'  %} />
+    <link rel="shortcut icon" type="image/x-icon"  href={% static 'd48_arraymethods/favicon.ico'  %} />
+  </head>
+  <body>
+  <div class="container">
+    <div class="row h-100 justify-content-center align-items-center text-center">
+      <div class="col col-md-8">
+        <h1>Array Tests</h1>
+        <form action="">
+          <input type="text" placeholder="Array Value"></input>
+          <button class="btn btn-primary">Add</button>
+        </form>
+        <hr>
+        <h2>Current Array:</h2><p>1, 2, 3, </p>
+        <ul id="results" class="text-start">
+          <li class="result">Test1: </li>
+          <li class="result">Test1: </li>
+          <li class="result">Test1: </li>
+          <li class="result">Test1: </li>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        
+      </div>
+    </div>
+  </div>
+    <script type= "module" src="{% static 'd48_arraymethods/script.js' %}"></script>
+  </body>
+</html>
