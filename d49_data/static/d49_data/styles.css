@@ -47,7 +47,8 @@ img {
 
 .btn{
   padding: 1rem;
-  margin: 2rem;
+  margin: 1rem;
+  font-size: 1.6rem;
   cursor: pointer;
   border: 1px dotted var(--black);
   border-radius: 3px;
