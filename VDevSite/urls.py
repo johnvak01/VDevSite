@@ -68,6 +68,7 @@ urlpatterns = [
     path('d47_imgslider',include("d47_imgslider.urls")),
     path('d48_arraymethods',include("d48_arraymethods.urls")),
     path('d49_data',include("d49_data.urls")),
+    path('d50_productfilter',include("d50_productfilter.urls")),
     
     ]
 

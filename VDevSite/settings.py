@@ -85,6 +85,7 @@ INSTALLED_APPS = [
     'd47_imgslider',
     'd48_arraymethods',
     'd49_data',
+    'd50_productfilter',
     'bootstrap5'
     ]
 
