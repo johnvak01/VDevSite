@@ -92,6 +92,7 @@ form input{
   animation: slide-up 0.5s ease 1;
   transform: all 0.3s;
   text-align: center;
+  display: none;
 }
 
 @keyframes slide-up{
@@ -136,9 +137,11 @@ form input{
 .no-result{
   display: none;
   color: red;
-  padding-bottom: 2rem;
+  padding: 2rem;
+  border: 1px red solid;
 }
 
 .show{
   display: block;
 }
+
